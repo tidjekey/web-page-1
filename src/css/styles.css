@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Inter';
+    color: #FFFFFF;
+    background: #000000;/*#2c2c2c;*/
+    margin: 0;
+}
+
+.row {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+    
+}
+
+.h1-like-title {
+    margin: 0;
+    font-family: 'Audiowide';
+    font-weight: 400;
+    font-size: 79px;
+}
+
+.h2-like-title {
+    margin: 0;
+    font-family: 'Audiowide';
+    font-weight: 400;
+    font-size: 51px;
+}
+
+.h3-like-title {
+    margin: 0;
+    font-family: 'Audiowide';
+    font-weight: 400;
+    font-size: 38px;
+}
+
+.gray {
+    color: #A8A8A8;
+}
+
+.font-size-15 {
+    font-size: 15px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+
+/* header */
+
+.header {
+    padding-top: 48px;
+    height: 100px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.nav {
+    margin-left: 40px;
+    margin-top: 1%;
+}
+
+.nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'DM Mono';
+    color: #FFFFFF;
+}
+
+.nav li + li {
+    margin-left: 40px;
+}
+
+.nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.2s ease-in;
+}
+
+.nav a:hover {
+    color: #8DFD1B;
+}
+
+.media ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.media li + li {  
+    padding-left: 12px;
+}
+
+.media a {
+    text-decoration: none;
+}
+
+/*
+.main-title {
+    
+}
+*/
+
+.main-title-txt {
+
+    margin-top: 128px;
+    padding-left: 72px;
+    padding-right: 5%;
+}
+
+.main-title-article {
+
+    margin: 0;
+    width: 60%;
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 43px;
+}
+
+.main-title-learn-more-btn {
+
+    margin-top: 115px;
+    
+    padding-top: 17px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 27px;
+
+
+    height: 60px;
+    width: 205px;
+
+    text-align: center;
+    font-family: 'DM Mono';
+    font-size: 16px;
+    background: #8DFD1B;
+    border-radius: 0px;
+    
+}
+
+/* main title */
+
+.about {
+
+    margin-top: 121px ;
+    display: flex;
+}
+
+.about-leftside {
+
+    margin-right: 15%;
+}
+
+.about-heading {
+ 
+    margin-left: 106px;
+    width: 50%;
+    
+}
+
+.about-img {
+    padding-top: 41px;
+    padding-left: 40px;
+}
+
+.about-info {
+    
+    width: 36%;
+    
+}
+
+.about-info-main {
+    border-left: 2px solid #8DFD1B;
+
+    padding-left: 22px;
+
+    font-family: 'DM Mono';
+    font-size: 21px;
+    color: #8DFD1B;
+}
+
+.about-info-additional {
+    width: 95%;
+}
+
+
