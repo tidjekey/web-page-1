@@ -344,11 +344,15 @@ body {
 .roadmap-phase-box {
     width: 40%;
 
-    margin-bottom: 140px;
+    z-index: 2;
 
     background: #222222;
     border: 1px solid #8DFD1B;
     border-radius: 0px;
+}
+
+.roadmap-phase-box-last {
+    margin-bottom: 142px;
 }
 
 .roadmap-phase-box-heading {
@@ -404,7 +408,7 @@ body {
 }
 
 .roadmap-phase-box-main {
-    padding-top: 25px;;
+    padding-top: 25px;
     padding-bottom: 30px;
 }
 
@@ -438,6 +442,33 @@ body {
     margin-right: 13px;
 
     border-radius: 11px;
+}
+
+.decorative-line {
+
+    width: 1px;
+    height: 40px;
+    left: calc(50% - 1px/2 + 0.5px);
+
+    margin-top: 45px;
+    margin-bottom: 55px;
+
+    background: #8DFD1B;
+    border-radius: 0px;
+}
+
+.decorative-circle-1 {
+    position: absolute;
+
+    margin-left: 38px;
+    margin-top: -260px;
+}
+
+.decorative-circle-2 {
+    position: absolute;
+
+    margin-left: 26.5%;
+    margin-top: 9%;
 }
 
 /* footer */
