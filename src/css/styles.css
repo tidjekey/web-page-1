@@ -17,6 +17,8 @@ p {
 }
 
 ul {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
@@ -45,6 +47,10 @@ body {
 
 .column {
     display: flex;
+    flex-direction: column;
+}
+
+.flex-direction-column {
     flex-direction: column;
 }
 
@@ -87,8 +93,16 @@ body {
     color: #A8A8A8;
 }
 
+.font-size-11 {
+    font-size: 11px;
+}
+
 .font-size-12 {
     font-size: 12px;
+}
+
+.font-size-13 {
+    font-size: 13px;
 }
 
 .font-size-15 {
@@ -361,6 +375,11 @@ body {
     color: #000000;
 }
 
+.phase-2-style {
+    background: none;
+    color: #8DFD1B;
+}
+
 .roadmap-phase-completion {
     margin-top: 16px;
     
@@ -385,10 +404,17 @@ body {
 }
 
 .roadmap-phase-box-main {
-
+    padding-top: 25px;;
+    padding-bottom: 30px;
 }
+
 .roadmap-phase-box-main ul {
     padding-left: 35px;
+    width: 70%;
+}
+
+.roadmap-phase-box-main p + p {
+    padding-top: 14px;
 }
 
 .roadmap-phase-box-main-li {
@@ -396,4 +422,54 @@ body {
     line-height: 32px;
 }
 
+.roadmap-phase-box-main-txt {
+    width: 70%;
 
+    margin-top: 12px;
+    margin-left: 13px;
+
+    line-height: 26px;
+}
+
+.roadmap-phase-box-main-sideimg {
+    width: 25%;
+    height: 25%;
+    
+    margin-right: 13px;
+
+    border-radius: 11px;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 50vh;
+
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+
+    background-color: #42006A;
+}
+
+.rights {
+
+    margin-top: 70px;
+
+    font-family: 'DM Mono';
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.nav-list {
+
+    font-family: 'DM Mono';
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.nav-list li + li {
+    padding-top: 29px;
+}
