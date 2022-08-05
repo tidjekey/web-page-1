@@ -627,8 +627,9 @@ body {
 
     .intro-learn-more-btn {
 
+        position: relative;
 
-        margin-left: 243px;
+        left: 55%;
 
         padding-left: 20px;
         padding-right: 20px;
