@@ -30,6 +30,7 @@ figure {
 body {
     margin: 0;
     font-family: 'Inter';
+    font-size: 16px;
     line-height: 26px;
     color: #FFFFFF;
     background: #000000;/*#2c2c2c;*/
@@ -93,6 +94,10 @@ body {
     color: #A8A8A8;
 }
 
+.green {
+    color: #8DFD1B;
+}
+
 .font-size-11 {
     font-size: 11px;
 }
@@ -125,6 +130,7 @@ body {
 }
 
 .nav-menu {
+
     margin-left: 40px;
     margin-top: 1%;
 }
@@ -161,44 +167,38 @@ body {
 
 /* intro */
 
-.intro {
-
-}
 
 .intro-txt {
     margin-top: 128px;
-    padding-left: 72px;
+    margin-left: 72px;
 }
 
 .intro-article {
-    margin: 0;
-    margin-top: 43px;
-
     width: 70%;
 
-    font-size: 16px;
+    margin-top: 43px;
+    margin-bottom: 115px;
+
     line-height: 26px;
 }
 
 .intro-img {
+
     width: 65%;
     height: 20%;
 }
 
 .intro-learn-more-btn {
-    margin-top: 115px;
     
-    padding-top: 17px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 27px;
-
-    height: 60px;
-    width: 205px;
-
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+   
     text-align: center;
     font-family: 'DM Mono';
-    font-size: 16px;
+    color: #000000;
+
     background: #8DFD1B;
     border-radius: 0px; 
 }
@@ -273,9 +273,10 @@ body {
 }
 
 .repeating-artists-heading {
-    margin-left: -191px;
 
-    width: calc(margin-left + 100vw);
+    margin-left: -3.5%;
+    
+    width: calc(-(margin-left) + 100vw);
     white-space: nowrap;
 
     word-spacing: 372px;
@@ -285,9 +286,12 @@ body {
 
 .repeating-artists-heading:before {
     --a: "artists";
-    --b: var(--a) " " var(--a) " " var(--a);
+    --b: var(--a) " " var(--a);
+    --c: var(--b) " " var(--b);
+    --d: var(--c) " " var(--c);
+    --e: var(--d) " " var(--d);
     
-    content: var(--b);
+    content: var(--e);
 }
 
 .artists-gallery {
@@ -401,7 +405,6 @@ body {
     font-family: 'DM Mono';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
     line-height: 28px;
 
     text-transform: uppercase;
@@ -471,11 +474,17 @@ body {
     margin-top: 9%;
 }
 
+/* discord */
+
+.discord {
+    display: none;
+}
+
 /* footer */
 
 .footer {
     width: 100%;
-    height: 50vh;
+    height: 50%;
 
     padding-left: 140px;
     padding-right: 140px;
@@ -487,7 +496,10 @@ body {
 
 .rights {
 
-    margin-top: 70px;
+    position: absolute;
+    
+
+    margin-top: 94zpx;
 
     font-family: 'DM Mono';
     font-size: 13px;
@@ -496,11 +508,317 @@ body {
 
 .nav-list {
 
+    margin-left: 100px;
+
     font-family: 'DM Mono';
     font-size: 16px;
     line-height: 19px;
 }
 
+
 .nav-list li + li {
     padding-top: 29px;
 }
+
+
+
+/* media */
+
+/* mobile*/
+@media (max-width: 478px) {
+
+    .container {
+        max-width: 478px;
+    }
+
+    /* header*/
+    .header {
+        margin-top: 45px;
+    }
+
+    .nav .media {
+        display: none;
+    }
+
+    .nav {
+        margin: 0;
+    }
+
+    .nav .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav div.row {
+        display: inline;
+    }
+
+    nav.nav.row {
+        display: inline;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+
+        align-self: center;
+        margin-bottom: 40px;
+    }
+
+    nav div.nav-menu ul {
+        justify-content: space-between;
+        margin-right: 40px;
+    }
+
+    .nav-menu li + li {
+        margin-left: 35px;
+    }
+
+    /* intro */
+
+    .intro-txt {
+        margin: 0;
+        margin-left: 42px;
+        margin-top: 20px;
+    }
+
+    .intro-txt .h2-like-title {
+        font-size: 32px;
+    }
+
+    .intro-article {
+        width: 85%;
+
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 33px;
+    }
+
+    .intro-learn-more-btn {
+
+        margin-right: 57px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+        float: right;
+
+    }
+
+    .intro-img {
+        width: 100vw;
+        height: auto;
+    }
+
+    .intro div.container.row {
+        flex-direction: column-reverse
+    }
+
+    /* main */
+
+    /* about */
+
+    .about {
+        margin-top: 86px;
+    }
+
+    .about div.about-info.column p{
+        display: none;
+    }
+    .about div.about-info.column{
+        justify-content: center;
+    }
+
+    .about-info {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    .about div.container.row {
+        display: inline;
+    }
+
+    .about-leftside {
+        width: 90%;
+        margin: 0;
+    }
+
+    .about-heading {
+        width: 100%;
+        margin-left: 47px;
+    }
+
+    .about-heading h2.h3-like-title {
+        text-align: left;
+    }
+    .about-heading h3.h3-like-title.gray {
+        width: 70%;
+
+        margin-right: 45px;
+        margin-top: 25px;
+
+        float: right;
+
+        text-align: right;
+    }
+
+    .about-img {
+        margin: 0;
+        margin-top: 51px;
+
+        width: 100vw;
+        height: auto;
+    }
+
+    .about-info-opensea-btn {
+        width: 49%;
+
+        margin-top: 45px;
+        margin-left: 130px;
+        margin-right: 125px;
+
+        
+    }
+
+    /* artists */
+
+    .artists-gallery {
+        display: none;
+    }
+    .artistis-bg  {
+        display: none;
+    }
+
+    .artists {
+        margin-top: 68px;
+    }
+
+    .artists .h1-like-title {
+        font-size: 14px;
+    }
+    
+    .repeating-artists-heading {
+
+        margin-left: -3.5%;
+        
+        width: calc(-(margin-left) + 100vw);
+
+        white-space: nowrap;
+    
+        word-spacing: 23px;
+    
+        overflow: hidden;
+    }
+    
+    .repeating-artists-heading:before {
+        --a: "artists";
+        --b: var(--a) " " var(--a);
+        --c: var(--b) " " var(--b);
+        --d: var(--c) " " var(--c);
+        --e: var(--d) " " var(--d);
+        
+        content: var(--e);
+    }
+
+
+    /* roadmap */
+
+    .roadmap {
+        display: none;
+    }
+
+    /* discord */
+
+    .discord {
+        display: block;
+    }
+
+    .discord-heading {
+        margin-left: 30px;
+        margin-right: 50px;
+    }
+
+    .discord-txt {
+
+        width: 76%;
+
+        margin-left: 35px;
+        margin-bottom: 35px;
+    }
+
+    .discord-join-btn {
+
+        margin-left: 35px;
+
+        padding: 12px 70px 10px 15px;
+        
+        border: 1px solid #8DFD1B;
+        background-color: #8DFD1B;
+
+        font-family: 'DM Mono';
+        line-height: 16px;
+
+        color: #000000;
+        
+    }
+
+    .discord-join-btn img {
+        position: relative;
+        top: 10px;
+    }
+
+    /* footer */
+
+    .nav-list ul li a.font-size-13 {
+        display: none;
+    }
+    
+    .footer {
+
+        height: 36vh;
+
+        margin-top: 60px;
+
+        padding-left: 43px;
+        padding-right: 15px;
+        padding-top: 64px;
+        padding-bottom: 22px;
+    }
+
+    .footer .logo {
+
+        margin-right: 40px;
+
+        float: left;
+    }
+
+    .nav-list {
+        margin-left: 0px;
+    }
+
+    .footer .container.row.space-between {
+        display: inline;
+    }
+
+    .footer .column.space-between {
+        display: inline;
+    }
+
+    .rights {
+
+        position: static;
+        margin-top: 100px;
+        margin-bottom: -25px;
+    }
+
+    .footer .media {
+        float: right;
+    }
+
+    
+}
+
+
+    
