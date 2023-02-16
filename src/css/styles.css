@@ -58,6 +58,9 @@ body {
 .space-between {
     justify-content: space-between;
 }
+.space-around {
+    justify-content: space-around;
+}
 
 .h1-like-title {
     font-family: 'Audiowide';
@@ -246,7 +249,7 @@ body {
     margin: 0;
     padding: 0;
     
-    margin-left: 161px;
+    
 }
 
 .about-info-main {
@@ -556,7 +559,199 @@ body {
 /* media */
 
 /* mobile*/
-@media (max-width: 478px) {
+
+
+@media screen and (max-width: 1439px) {
+    .decorative-circle-1 {
+        display: none;
+    }
+    .decorative-circle-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    .container {
+        max-width: 1280px;
+    }
+
+    .nav-list ul li a.font-size-13 {
+        display: none;
+    }
+
+    .footer {
+    
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 80px;
+        padding-bottom: 100px;
+    
+        background-color: #42006A;
+    }
+   
+    .nav-list {
+        margin-left: 40px;
+    }
+
+    .rights {
+        margin-top: 50px;
+    }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container {
+        max-width: 1024px;
+    }
+
+    .nav .media {
+        display: none;
+    }
+    .nav {
+        justify-content: center;
+    }
+
+    .intro-txt {
+        margin: 0;
+        margin-left: 42px;
+        margin-top: 20px;
+    }
+
+    .intro-article {
+        width: 50%;
+
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 33px;
+    }
+
+    .intro-img {
+        width: 100vw;
+        height: auto;
+    }
+
+    .intro div.container.row {
+        flex-direction: column-reverse
+    }
+
+
+
+    .about-leftside {
+        width: 40%;
+        margin-left: 0px;
+    }
+
+    .about-info {
+        margin-left: 50px;
+    }
+
+    .repeating-artists-heading {
+        margin-left: -20%;
+        word-spacing: 150px;
+    }
+    
+    .artists-gallery{
+        grid-template-columns: repeat(3, 2fr);
+    }
+
+    .roadmap-phase-box {
+        width: 60%;
+    }
+
+    .decorative-circle-1 {
+        display: none;
+    }
+    .decorative-circle-2 {
+        display: none;
+    }
+
+    
+
+    .nav-list ul li a.font-size-13 {
+        display: none;
+    }
+
+    .footer .container.row.space-between {
+        display: inline;
+    }
+
+    .footer .column.space-between {
+        display: inline;
+    }
+
+    .footer .logo {
+
+        margin-right: 40px;
+
+        float: left;
+    }
+
+    .rights {
+
+        position: static;
+        margin-top: 100px;
+        margin-bottom: -25px;
+    }
+
+    .footer .media {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 920px) {
+
+    .about .container.row.space-around {
+        justify-content: space-between;
+    }
+    .about-info.column {
+        margin: 0 1em;
+    }
+    
+    .about-heading .h3-like-title{
+        font-size: 30px !important;
+    }
+
+    .about-leftside {
+        margin-left: 0;
+    }
+
+    .about-info-opensea-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .about div.container.row.space-around {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .about-leftside {
+        width: 40%;
+        margin: 20px 20px;
+        flex-direction: row;
+    }
+
+    .about-heading {
+        margin-left: 30px;
+    }
+
+    .about-info {
+        width: 80%;
+        margin: 0 auto !important;
+        
+    }
+
+    .artists {
+        display: none;
+    }
+}
+    
+@media screen and (max-width: 478px) {
 
     .container {
         max-width: 478px;
@@ -791,157 +986,22 @@ body {
     
     .footer {
 
-        height: 36vh;
-
         margin-top: 60px;
 
-        padding-left: 43px;
-        padding-right: 15px;
-        padding-top: 64px;
-        padding-bottom: 22px;
-    }
-
-    .footer .logo {
-
-        margin-right: 40px;
-
-        float: left;
-    }
-
-    .nav-list {
-        margin-left: 0px;
-    }
-
-    .footer .container.row.space-between {
-        display: inline;
-    }
-
-    .footer .column.space-between {
-        display: inline;
-    }
-
-    .rights {
-
-        position: static;
-        margin-top: 100px;
-        margin-bottom: -25px;
-    }
-
-    .footer .media {
-        float: right;
-    }
-
-    
-}
-
-@media (max-width: 1439px) {
-    .decorative-circle-1 {
-        display: none;
-    }
-    .decorative-circle-2 {
-        display: none;
-    }
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-    .container {
-        max-width: 1280px;
-    }
-
-    .nav-list ul li a.font-size-13 {
-        display: none;
-    }
-
-    .footer {
-    
-        padding-left: 100px;
-        padding-right: 100px;
-        padding-top: 80px;
+       
+        padding: 15px 15px;
         padding-bottom: 100px;
-    
-        background-color: #42006A;
     }
-   
+
+    .footer .logo {
+
+        margin-right: 40px;
+
+        float: left;
+    }
+
     .nav-list {
-        margin-left: 40px;
-    }
-
-    .rights {
-        margin-top: 50px;
-    }
-
-
-}
-
-@media (min-width: 479px) and (max-width: 1024px) {
-
-    .container {
-        max-width: 1024px;
-    }
-
-    .nav .media {
-        display: none;
-    }
-
-    .intro-txt {
-        margin: 0;
-        margin-left: 42px;
-        margin-top: 20px;
-    }
-
-    .intro-article {
-        width: 50%;
-
-        margin: 0;
-        margin-top: 10px;
-        margin-bottom: 33px;
-    }
-
-    .intro-img {
-        width: 100vw;
-        height: auto;
-    }
-
-    .intro div.container.row {
-        flex-direction: column-reverse
-    }
-
-
-
-    .about-leftside {
-        width: 40%;
         margin-left: 0px;
-    }
-
-    .about-info {
-        margin-left: 50px;
-    }
-
-    .repeating-artists-heading {
-        margin-left: -20%;
-        word-spacing: 150px;
-    }
-    
-    .artists-gallery{
-        grid-template-columns: repeat(3, 2fr);
-    }
-
-    .roadmap-phase-box {
-        width: 60%;
-    }
-
-    .decorative-circle-1 {
-        display: none;
-    }
-    .decorative-circle-2 {
-        display: none;
-    }
-
-    
-
-    .nav-list ul li a.font-size-13 {
-        display: none;
     }
 
     .footer .container.row.space-between {
@@ -952,22 +1012,16 @@ body {
         display: inline;
     }
 
-    .footer .logo {
-
-        margin-right: 40px;
-
-        float: left;
-    }
-
     .rights {
 
-        position: static;
-        margin-top: 100px;
-        margin-bottom: -25px;
+        position: relative;;
+        margin: 0 auto;
+        margin-top: 30px;
     }
 
     .footer .media {
         float: right;
     }
-}
+
     
+}
